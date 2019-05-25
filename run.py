@@ -1,4 +1,6 @@
 from app import app
 
-if __name__ == '__main__':
-    app.run()
+@app.route('/')
+@app.route('/index')
+def index():
+    return "Hello, World!"
